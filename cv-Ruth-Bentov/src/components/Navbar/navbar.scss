@@ -1,0 +1,39 @@
+@import "../../assets/style.scss";
+
+.navbar {
+  // background-color: $darkGray;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  ul {
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    justify-content: right;
+
+    li {
+      display: inline-block;
+      width: 10%;
+      margin: 15px 20px;
+      a {
+        padding: 15px 20px;
+        display: block;
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+          // background-color: #d3d3d3;
+          // color: black;
+          border-bottom: 5px solid orange;
+          transition: background-color 0.2s;
+          transition: border-bottom 0.2s ease-out;
+        }
+      }
+    }
+  }
+}

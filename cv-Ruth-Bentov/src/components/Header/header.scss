@@ -1,0 +1,104 @@
+@import "../../assets/style.scss";
+*{
+  padding: 0%;
+  margin: 0;
+}
+.headerDiv {
+  background-color: $darkGray;
+  color: $whiteGray;
+  text-align: left;
+  width: calc(100vw - 16rem);
+  font-family: "Roboto";
+  height: calc(100vh - 16rem);
+  display: flex;
+  justify-content: space-around;
+  padding-top: 3rem;
+  padding: 8rem;
+  background-image: url('public\45050baa-6dd0-4938-9619-38aa0201b93e.png');
+  background-size: cover; /* התאמה אוטומטית לגודל הדיב */
+  background-position: center; /* מיקום התמונה במרכז הדיב */
+  //   background: linear-gradient(to right, #3498db, #e74c3c);
+  .rDiv {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 40%;
+    .myName {
+      padding-left: 4rem;
+      font-family: "Roboto";
+      color: $whiteGray;
+      font-size: 90px;
+      margin: 0%;
+      line-height: 1;
+      z-index: 2;
+    }
+    .line {
+      font-size: 40px;
+      font-weight: 900;
+      color: orange;
+      padding: 0;
+      margin:0;
+      width: 40px;
+      padding-left: 4rem;
+    }
+    
+    .profileImg {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      filter: brightness(0.65);
+      width: 100%;
+      height: calc(100vh - 8rem);
+      object-fit: cover;
+      object-position: 0% 0%;
+    }
+
+  }
+  .lDiv {
+    // border-left: 4px solid orange;
+    padding-left: 10%;
+    margin-top: 10%;
+    .onHeaderP{
+      letter-spacing: 12px;
+    }
+    .fullStackName {
+      font-family: "Roboto";
+      color: $whiteGray;
+      font-size: 290%;
+      letter-spacing: 3px;
+      margin-top: 15px ;
+    }
+    .describing{
+      width: 60%;
+      line-height: 2.5;
+      line-break:strict;
+      color: $lightGray;
+      letter-spacing: .5px;
+    }
+    .line {
+      font-size: 20px;
+      color: orange;
+    }
+    .hireMeBtn{
+      border-style: none;
+      border-radius: 0px;
+      color: $darkGray;
+      border: 2px solid orange;
+      transition: all 0.5s;
+      margin-top: 15px;
+      background-color: $whiteGray;
+      cursor: pointer;
+      &:hover{
+        background-color: $darkGray;
+        color: $whiteGray;
+
+      }
+      .arrowIcon{
+        color: orange;
+        font-size: 15px;
+        
+      }
+    }
+  }
+}
+

@@ -1,18 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.scss'
-import NavBar from './componetns/Navbar'
-import Header from './componetns/Header'
+import "./App.scss";
+import HomePage from "./Pages/HomePage";
+import Test from "./components/Test";
 
 function App() {
-
   return (
     <>
-    {/* <NavBar></NavBar> */}
-    <Header/>
+          {/* <HomePage/> */}
+          <Test/>
+      
     </>
-  )
+  );
 }
 
-export default App
+export default App;
