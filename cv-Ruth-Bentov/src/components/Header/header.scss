@@ -1,11 +1,11 @@
 @import "../../assets/style.scss";
-*{
+* {
   padding: 0%;
   margin: 0;
 }
 .headerDiv {
-  background-color: $darkGray;
-  color: $whiteGray;
+  background-color: $lightGray;
+  color: $darkGray;
   text-align: left;
   width: calc(100vw - 16rem);
   font-family: "Roboto";
@@ -14,10 +14,10 @@
   justify-content: space-around;
   padding-top: 3rem;
   padding: 8rem;
-  background-image: url('public\45050baa-6dd0-4938-9619-38aa0201b93e.png');
+  background-image: url("public\45050baa-6dd0-4938-9619-38aa0201b93e.png");
   background-size: cover; /* התאמה אוטומטית לגודל הדיב */
   background-position: center; /* מיקום התמונה במרכז הדיב */
-  //   background: linear-gradient(to right, #3498db, #e74c3c);
+  background: linear-gradient(to right, #d7d7d7, #363a49);
   .rDiv {
     display: flex;
     flex-direction: column;
@@ -26,7 +26,8 @@
     .myName {
       padding-left: 4rem;
       font-family: "Roboto";
-      color: $whiteGray;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      color: $superDark;
       font-size: 90px;
       margin: 0%;
       line-height: 1;
@@ -37,11 +38,11 @@
       font-weight: 900;
       color: orange;
       padding: 0;
-      margin:0;
+      margin: 0;
       width: 40px;
       padding-left: 4rem;
     }
-    
+
     .profileImg {
       position: absolute;
       top: 0;
@@ -52,34 +53,34 @@
       object-fit: cover;
       object-position: 0% 0%;
     }
-
   }
   .lDiv {
     // border-left: 4px solid orange;
     padding-left: 10%;
     margin-top: 10%;
-    .onHeaderP{
+    .onHeaderP {
       letter-spacing: 12px;
     }
     .fullStackName {
       font-family: "Roboto";
       color: $whiteGray;
+      color: white;
       font-size: 290%;
       letter-spacing: 3px;
-      margin-top: 15px ;
+      margin-top: 15px;
     }
-    .describing{
+    .describing {
       width: 60%;
       line-height: 2.5;
-      line-break:strict;
+      line-break: strict;
       color: $lightGray;
-      letter-spacing: .5px;
+      letter-spacing: 0.5px;
     }
     .line {
       font-size: 20px;
       color: orange;
     }
-    .hireMeBtn{
+    .hireMeBtn {
       border-style: none;
       border-radius: 0px;
       color: $darkGray;
@@ -88,17 +89,19 @@
       margin-top: 15px;
       background-color: $whiteGray;
       cursor: pointer;
-      &:hover{
+      &:hover {
         background-color: $darkGray;
         color: $whiteGray;
-
       }
-      .arrowIcon{
+      .arrowIcon {
         color: orange;
         font-size: 15px;
-        
       }
     }
   }
+  .ballDown {
+    width: 60px;
+    position: absolute;
+    bottom: 5px;
+  }
 }
-
