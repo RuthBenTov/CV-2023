@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ProjectCard from "../../components/Projects/ProjectCard";
 import "./projectsPageStyle.scss";
+import { projectsList } from "../../components/Projects/projectList";
 const Projects = () => {
   const [chosenCategory, setChosenCategory] = useState("all");
   return (
@@ -43,13 +44,9 @@ const Projects = () => {
         </div>
       </div>
       <div className="projectsCards">
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
+        {projectsList.map((project, index) => (
+          <ProjectCard key={index} project={project} />
+        ))}
       </div>
     </div>
   );

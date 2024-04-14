@@ -19,7 +19,7 @@ const HomePage = () => {
           <span className="miniText">
             Hello! i’m <span className="red"> Ruth Bentov</span>, <br /> a
           </span>{" "}
-          Full stack engineer
+          Full stack developer
         </p>
         <p className="description">
           with knowledge in various technologies aiding me in
@@ -39,7 +39,12 @@ const HomePage = () => {
         </button>
       </div>
       <div className="goDownDiv">
-        <img
+        <img onClick={() => {
+          const targetElement = document.getElementById("aboutPageId");
+          if (targetElement) {
+            targetElement.scrollIntoView({ behavior: "smooth", block: "start" })
+          }
+        }}
           className="goDown"
           src="./../../../public/images/Ellipsis@1.25x-10.0s-200px-200px.gif"
           alt=""

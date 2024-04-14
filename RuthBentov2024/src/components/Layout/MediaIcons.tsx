@@ -15,10 +15,16 @@ const MediaIcons = () => {
   });
   return (
     <div data-aos="fade-right" className="mediaIcons">
-      <IoLogoLinkedin />
-      <FaSquareGithub />
-      <SiDiscord />
-      <FaFacebookSquare />
+      < IoLogoLinkedin onClick={()=>window.open("https://www.linkedin.com/in/ruth-bentov-developer/", "_blank")} />
+      < FaSquareGithub onClick={()=>{window.open("https://github.com/RuthBenTov?tab=repositories", "_blank");}} />
+      < SiDiscord onClick={()=>{window.open(
+        "https://discord.com/channels/@me/1217548504604610684",
+        "_blank"
+      );}} />
+      < FaFacebookSquare onClick={()=>{window.open(
+        "https://www.facebook.com/profile.php?id=100013842644149&locale=he_IL",
+        "_blank"
+      );}} />
     </div>
   );
 };
